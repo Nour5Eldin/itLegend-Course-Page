@@ -2,7 +2,6 @@ export interface CourseSidebar {
     id: string;
     title: string;
     progressBarString: string;
-    progressBarPercentage: number;
     courseParts: CoursePart[];
 }
 export interface CoursePart {
@@ -20,6 +19,12 @@ export interface CourseTopic {
     id: string;
     title: string;
     duration?: string;
+    videoUrl: string;
+    posterUrl: string;
+    lesson?: {
+        title: string;
+        description: string;
+    };
     hasQuizzes?: boolean;
     isLocked: boolean;
     questionCount?: number;
@@ -73,4 +78,16 @@ export interface LeaderboardPopupData {
     message: string;
     entries: LeaderboardEntry[];
     emptySlots: number;
+}
+export type CourseStatus = "not-started" | "in-progress" | "completed";
+
+export interface CourseSummary {
+    slug: string;
+    title: string;
+    instructor: string;
+    description: string;
+    thumbnailUrl: string;
+    lessonsCount: number;
+    progress: number;
+    status: CourseStatus;
 }

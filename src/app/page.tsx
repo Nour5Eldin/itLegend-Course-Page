@@ -1,7 +1,7 @@
-import CourseDetailsPage from "@/features/CourseDetailsPage";
+import CoursesPageView from "@/features/CoursesPageView";
 
 export default function Home() {
   return (
-      <CourseDetailsPage />
+    <CoursesPageView />
   );
 }

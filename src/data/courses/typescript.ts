@@ -1,0 +1,422 @@
+import type {
+    Comment,
+    CourseHero,
+    CourseMaterials,
+    CourseSidebar,
+    LeaderboardPopupData,
+} from "@/types/course";
+
+export const typescriptSummaryData = {
+    slug: "typescript",
+    instructor: "Elzero Web School",
+    description:
+        "Learn TypeScript in Arabic: type annotations, interfaces, classes and generics.",
+    progress: 0,
+};
+
+export const typescriptHeroData: CourseHero = {
+    id: "typescript",
+    title: "Learn TypeScript In Arabic 2022",
+    videoUrl: "https://www.youtube.com/watch?v=yUndnE-2osg",
+    posterUrl: "https://img.youtube.com/vi/yUndnE-2osg/maxresdefault.jpg",
+    breadcrumb: [
+        { label: "Home", href: "/" },
+        { label: "Courses", href: "/" },
+        { label: "Course Details", href: "/courses/typescript" },
+    ],
+};
+
+export const typescriptMaterialsData: CourseMaterials = {
+    id: "typescript",
+    duration: "4 weeks",
+    lessonsCount: 38,
+    enrolledStudentCount: 150,
+    language: "Arabic",
+};
+
+export const typescriptSidebarData: CourseSidebar = {
+    id: "typescript",
+    title: "Topics for This Course",
+    progressBarString: "you",
+    courseParts: [
+        {
+            id: "typescript-part-1",
+            title: "Fundamentals",
+            courseModule: [
+                {
+                    id: "typescript-module-1",
+                    title: "Lessons 01–11",
+                    description:
+                        "Setup, type annotations, arrays and functions.",
+                    topics: [
+                        {
+                            id: "typescript-topic-1",
+                            title: "01. Introduction And What Is TypeScript",
+                            videoUrl: "https://www.youtube.com/watch?v=yUndnE-2osg",
+                            posterUrl: "https://img.youtube.com/vi/yUndnE-2osg/maxresdefault.jpg",
+                            isLocked: false,
+                            isCompleted: true,
+                        },
+                        {
+                            id: "typescript-topic-2",
+                            title: "02. Install TypeScript And Transpile Files",
+                            videoUrl: "https://www.youtube.com/watch?v=pc5IlcEn8vw",
+                            posterUrl: "https://img.youtube.com/vi/pc5IlcEn8vw/maxresdefault.jpg",
+                            isLocked: false,
+                            isCompleted: true,
+                        },
+                        {
+                            id: "typescript-topic-3",
+                            title: "03. Create Configuration And Watch Files",
+                            videoUrl: "https://www.youtube.com/watch?v=CSll1rsRPOI",
+                            posterUrl: "https://img.youtube.com/vi/CSll1rsRPOI/maxresdefault.jpg",
+                            isLocked: false,
+                            isCompleted: true,
+                        },
+                        {
+                            id: "typescript-topic-4",
+                            title: "04. Statically vs Dynamically Typed Languages",
+                            videoUrl: "https://www.youtube.com/watch?v=OgxYA7G9HsM",
+                            posterUrl: "https://img.youtube.com/vi/OgxYA7G9HsM/maxresdefault.jpg",
+                            isLocked: false,
+                            isCompleted: true,
+                        },
+                        {
+                            id: "typescript-topic-5",
+                            title: "05. Type Annotations And Any Data Type",
+                            videoUrl: "https://www.youtube.com/watch?v=quwf-YbyHVg",
+                            posterUrl: "https://img.youtube.com/vi/quwf-YbyHVg/maxresdefault.jpg",
+                            isLocked: false,
+                            isCompleted: true,
+                        },
+                        {
+                            id: "typescript-topic-6",
+                            title: "06. Type Annotations With Arrays",
+                            videoUrl: "https://www.youtube.com/watch?v=U405xMeS4lM",
+                            posterUrl: "https://img.youtube.com/vi/U405xMeS4lM/maxresdefault.jpg",
+                            isLocked: false,
+                            isCompleted: true,
+                        },
+                        {
+                            id: "typescript-topic-7",
+                            title: "07. Type Annotations With Multidimensional Arrays",
+                            videoUrl: "https://www.youtube.com/watch?v=n6JBmErg1OY",
+                            posterUrl: "https://img.youtube.com/vi/n6JBmErg1OY/maxresdefault.jpg",
+                            isLocked: false,
+                            isCompleted: true,
+                        },
+                        {
+                            id: "typescript-topic-8",
+                            title: "08. Type Annotations With Function",
+                            videoUrl: "https://www.youtube.com/watch?v=ibvt_Ala8wE",
+                            posterUrl: "https://img.youtube.com/vi/ibvt_Ala8wE/maxresdefault.jpg",
+                            isLocked: false,
+                            isCompleted: true,
+                        },
+                        {
+                            id: "typescript-topic-9",
+                            title: "09. Function Optional and Default Parameters",
+                            videoUrl: "https://www.youtube.com/watch?v=IS2VuO0IWso",
+                            posterUrl: "https://img.youtube.com/vi/IS2VuO0IWso/maxresdefault.jpg",
+                            isLocked: false,
+                            isCompleted: true,
+                        },
+                        {
+                            id: "typescript-topic-10",
+                            title: "10. Function Rest Parameter",
+                            videoUrl: "https://www.youtube.com/watch?v=RBOpzAQaQos",
+                            posterUrl: "https://img.youtube.com/vi/RBOpzAQaQos/maxresdefault.jpg",
+                            isLocked: false,
+                            isCompleted: true,
+                        },
+                        {
+                            id: "typescript-topic-11",
+                            title: "11. Type Annotations With Anonymous And Arrow Function",
+                            videoUrl: "https://www.youtube.com/watch?v=AWg__YvDdvg",
+                            posterUrl: "https://img.youtube.com/vi/AWg__YvDdvg/maxresdefault.jpg",
+                            isLocked: false,
+                            isCompleted: true,
+                        },
+                    ],
+                },
+            ],
+        },
+        {
+            id: "typescript-part-2",
+            title: "Intermediate",
+            courseModule: [
+                {
+                    id: "typescript-module-2",
+                    title: "Lessons 12–26",
+                    description:
+                        "Type aliases, literal types, tuples, enums, unions, objects and interfaces.",
+                    topics: [
+                        {
+                            id: "typescript-topic-12",
+                            title: "12. Data Types - Type Alias",
+                            videoUrl: "https://www.youtube.com/watch?v=TWTt63RJ3ic",
+                            posterUrl: "https://img.youtube.com/vi/TWTt63RJ3ic/maxresdefault.jpg",
+                            isLocked: false,
+                            isCompleted: true,
+                        },
+                        {
+                            id: "typescript-topic-13",
+                            title: "13. Data Types - Type Alias Advanced",
+                            videoUrl: "https://www.youtube.com/watch?v=J1WsNERYqYA",
+                            posterUrl: "https://img.youtube.com/vi/J1WsNERYqYA/maxresdefault.jpg",
+                            isLocked: false,
+                            isCompleted: true,
+                        },
+                        {
+                            id: "typescript-topic-14",
+                            title: "14. Data Types - Literal Types",
+                            videoUrl: "https://www.youtube.com/watch?v=BmmTQZsKXyw",
+                            posterUrl: "https://img.youtube.com/vi/BmmTQZsKXyw/maxresdefault.jpg",
+                            isLocked: false,
+                            isCompleted: true,
+                        },
+                        {
+                            id: "typescript-topic-15",
+                            title: "15. Data Types - Tuple",
+                            videoUrl: "https://www.youtube.com/watch?v=hwTOswoq3BE",
+                            posterUrl: "https://img.youtube.com/vi/hwTOswoq3BE/maxresdefault.jpg",
+                            isLocked: false,
+                            isCompleted: true,
+                        },
+                        {
+                            id: "typescript-topic-16",
+                            title: "16. Data Types - Void And Never",
+                            videoUrl: "https://www.youtube.com/watch?v=tPQCnP2IYn8",
+                            posterUrl: "https://img.youtube.com/vi/tPQCnP2IYn8/maxresdefault.jpg",
+                            isLocked: false,
+                            isCompleted: true,
+                        },
+                        {
+                            id: "typescript-topic-17",
+                            title: "17. Data Types - Enums Part 1",
+                            videoUrl: "https://www.youtube.com/watch?v=Lb8-2rI8nco",
+                            posterUrl: "https://img.youtube.com/vi/Lb8-2rI8nco/maxresdefault.jpg",
+                            isLocked: false,
+                            isCompleted: true,
+                        },
+                        {
+                            id: "typescript-topic-18",
+                            title: "18. Data Types - Enums Part 2",
+                            videoUrl: "https://www.youtube.com/watch?v=gMNoF-BVWpA",
+                            posterUrl: "https://img.youtube.com/vi/gMNoF-BVWpA/maxresdefault.jpg",
+                            isLocked: false,
+                            isCompleted: true,
+                        },
+                        {
+                            id: "typescript-topic-19",
+                            title: "19. Data Types - Type Assertions",
+                            videoUrl: "https://www.youtube.com/watch?v=tPSHBw_2huc",
+                            posterUrl: "https://img.youtube.com/vi/tPSHBw_2huc/maxresdefault.jpg",
+                            isLocked: false,
+                            isCompleted: true,
+                        },
+                        {
+                            id: "typescript-topic-20",
+                            title: "20. Data Types - Union And Intersection Types",
+                            videoUrl: "https://www.youtube.com/watch?v=Uf-ODplNJ7A",
+                            posterUrl: "https://img.youtube.com/vi/Uf-ODplNJ7A/maxresdefault.jpg",
+                            isLocked: false,
+                            isCompleted: true,
+                        },
+                        {
+                            id: "typescript-topic-21",
+                            title: "21. Type Annotations With Object",
+                            videoUrl: "https://www.youtube.com/watch?v=7pjfbbZTOCU",
+                            posterUrl: "https://img.youtube.com/vi/7pjfbbZTOCU/maxresdefault.jpg",
+                            isLocked: false,
+                            isCompleted: true,
+                        },
+                        {
+                            id: "typescript-topic-22",
+                            title: "22. Interface Declaration",
+                            videoUrl: "https://www.youtube.com/watch?v=qopmfZ30_TQ",
+                            posterUrl: "https://img.youtube.com/vi/qopmfZ30_TQ/maxresdefault.jpg",
+                            isLocked: false,
+                            isCompleted: true,
+                        },
+                        {
+                            id: "typescript-topic-23",
+                            title: "23. Interface Method And Parameters",
+                            videoUrl: "https://www.youtube.com/watch?v=ZOWwVhAUtZQ",
+                            posterUrl: "https://img.youtube.com/vi/ZOWwVhAUtZQ/maxresdefault.jpg",
+                            isLocked: false,
+                            isCompleted: true,
+                        },
+                        {
+                            id: "typescript-topic-24",
+                            title: "24. Interface Reopen And Use Cases",
+                            videoUrl: "https://www.youtube.com/watch?v=7rJwXk_SuXQ",
+                            posterUrl: "https://img.youtube.com/vi/7rJwXk_SuXQ/maxresdefault.jpg",
+                            isLocked: false,
+                            isCompleted: true,
+                        },
+                        {
+                            id: "typescript-topic-25",
+                            title: "25. Interface Extend",
+                            videoUrl: "https://www.youtube.com/watch?v=3iwthBqZwrM",
+                            posterUrl: "https://img.youtube.com/vi/3iwthBqZwrM/maxresdefault.jpg",
+                            isLocked: false,
+                            isCompleted: true,
+                        },
+                        {
+                            id: "typescript-topic-26",
+                            title: "26. Interface Final Discussion",
+                            videoUrl: "https://www.youtube.com/watch?v=CaBIiFpxFTo",
+                            posterUrl: "https://img.youtube.com/vi/CaBIiFpxFTo/maxresdefault.jpg",
+                            isLocked: false,
+                            isCompleted: true,
+                        },
+                    ],
+                },
+            ],
+        },
+        {
+            id: "typescript-part-3",
+            title: "Advanced",
+            courseModule: [
+                {
+                    id: "typescript-module-3",
+                    title: "Lessons 27–38",
+                    description:
+                        "Classes, access modifiers, abstract classes, polymorphism and generics.",
+                    topics: [
+                        {
+                            id: "typescript-topic-27",
+                            title: "27. Class Type Annotations",
+                            videoUrl: "https://www.youtube.com/watch?v=mD3qHYKNBfo",
+                            posterUrl: "https://img.youtube.com/vi/mD3qHYKNBfo/maxresdefault.jpg",
+                            isLocked: false,
+                            isCompleted: true,
+                        },
+                        {
+                            id: "typescript-topic-28",
+                            title: "28. Class Access Modifiers And Parameters Properties",
+                            videoUrl: "https://www.youtube.com/watch?v=FzROwTuVKr8",
+                            posterUrl: "https://img.youtube.com/vi/FzROwTuVKr8/maxresdefault.jpg",
+                            isLocked: false,
+                            isCompleted: true,
+                        },
+                        {
+                            id: "typescript-topic-29",
+                            title: "29. Class Get And Set Accessors",
+                            videoUrl: "https://www.youtube.com/watch?v=kXS5eprio7I",
+                            posterUrl: "https://img.youtube.com/vi/kXS5eprio7I/maxresdefault.jpg",
+                            isLocked: false,
+                            isCompleted: true,
+                        },
+                        {
+                            id: "typescript-topic-30",
+                            title: "30. Class Static Members",
+                            videoUrl: "https://www.youtube.com/watch?v=mFnCSvduc8M",
+                            posterUrl: "https://img.youtube.com/vi/mFnCSvduc8M/maxresdefault.jpg",
+                            isLocked: false,
+                            isCompleted: true,
+                        },
+                        {
+                            id: "typescript-topic-31",
+                            title: "31. Class Implements Interface",
+                            videoUrl: "https://www.youtube.com/watch?v=klcmDKP_34s",
+                            posterUrl: "https://img.youtube.com/vi/klcmDKP_34s/maxresdefault.jpg",
+                            isLocked: false,
+                            isCompleted: true,
+                        },
+                        {
+                            id: "typescript-topic-32",
+                            title: "32. Abstract Classes And Members",
+                            videoUrl: "https://www.youtube.com/watch?v=nesuaOpNDWU",
+                            posterUrl: "https://img.youtube.com/vi/nesuaOpNDWU/maxresdefault.jpg",
+                            isLocked: false,
+                            isCompleted: true,
+                        },
+                        {
+                            id: "typescript-topic-33",
+                            title: "33. Polymorphism And Method Override",
+                            videoUrl: "https://www.youtube.com/watch?v=V-CEhWbYDYY",
+                            posterUrl: "https://img.youtube.com/vi/V-CEhWbYDYY/maxresdefault.jpg",
+                            isLocked: false,
+                            isCompleted: true,
+                        },
+                        {
+                            id: "typescript-topic-34",
+                            title: "34. Generics Introduction",
+                            videoUrl: "https://www.youtube.com/watch?v=b1w1qa3H_vA",
+                            posterUrl: "https://img.youtube.com/vi/b1w1qa3H_vA/maxresdefault.jpg",
+                            isLocked: false,
+                            isCompleted: true,
+                        },
+                        {
+                            id: "typescript-topic-35",
+                            title: "35. Generics Multiple Types",
+                            videoUrl: "https://www.youtube.com/watch?v=BA40TsV6LxQ",
+                            posterUrl: "https://img.youtube.com/vi/BA40TsV6LxQ/maxresdefault.jpg",
+                            isLocked: false,
+                            isCompleted: true,
+                        },
+                        {
+                            id: "typescript-topic-36",
+                            title: "36. Generics Classes",
+                            videoUrl: "https://www.youtube.com/watch?v=Mj6TJAoisxw",
+                            posterUrl: "https://img.youtube.com/vi/Mj6TJAoisxw/maxresdefault.jpg",
+                            isLocked: false,
+                            isCompleted: true,
+                        },
+                        {
+                            id: "typescript-topic-37",
+                            title: "37. Generics And Interfaces",
+                            videoUrl: "https://www.youtube.com/watch?v=9uwul5pr0YE",
+                            posterUrl: "https://img.youtube.com/vi/9uwul5pr0YE/maxresdefault.jpg",
+                            isLocked: false,
+                            isCompleted: true,
+                        },
+                        {
+                            id: "typescript-topic-38",
+                            title: "38. The End And How To Master Typescript",
+                            videoUrl: "https://www.youtube.com/watch?v=Ot5AGaudAcg",
+                            posterUrl: "https://img.youtube.com/vi/Ot5AGaudAcg/maxresdefault.jpg",
+                            isLocked: false,
+                            isCompleted: true,
+                        },
+                    ],
+                },
+            ],
+        },
+    ],
+};
+
+export const typescriptCommentsData: Comment[] = [
+    {
+        id: "typescript-comment-1",
+        userId: "1",
+        userName: "Hany Mostafa",
+        userAvatar:
+            "https://res.cloudinary.com/dt5u0fgqz/image/upload/v1783331899/charlie-green_zmue0y.jpg",
+        content:
+            "Generics finally made sense after the last few lessons.",
+        createdAt: new Date("2026-09-09"),
+    },
+    {
+        id: "typescript-comment-2",
+        userId: "2",
+        userName: "Dina Ahmed",
+        userAvatar:
+            "https://res.cloudinary.com/dt5u0fgqz/image/upload/v1783331883/michael-dam_esmmfy.jpg",
+        content:
+            "Very clear explanation of interfaces versus type aliases.",
+        createdAt: new Date("2026-09-15"),
+    },
+];
+
+export const typescriptLeaderboardData: LeaderboardPopupData = {
+    courseName: "Learn TypeScript In Arabic 2022",
+    title: "Leaderboard",
+    emoji: "🔷",
+    message:
+        "خلصت الكورس بالكامل! ابدأ طبّق TypeScript في مشاريعك الحقيقية.",
+    entries: [],
+    emptySlots: 6,
+};
