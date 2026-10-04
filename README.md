@@ -6,7 +6,7 @@ The project was developed as part of an **IT Legend Challenge**, focusing on bui
 
 ## Live Demo
 
-IT Legend Course Page
+IT Legend Course Page: https://it-legend-courses-v2.vercel.app/
 
 ## Repository
 
