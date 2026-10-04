@@ -4,13 +4,19 @@ import { Inter } from "next/font/google";
 
 const inter = Inter({ subsets: ["latin"] });
 export const metadata: Metadata = {
-  title: "ITLegend | Starting SEO as your Home",
-  description: "Course details page for Starting SEO as your Home — learn SEO fundamentals with ITLegend's structured curriculum.",
+  title: "ITLegend Courses | Learn, Practice & Build",
+  description:
+    "Explore ITLegend courses, follow structured lessons, and build your skills through a focused learning experience.",
   openGraph: {
-    title: "Starting SEO as your Home",
-    description: "Learn SEO fundamentals with ITLegend's structured curriculum.",
-    images: [{ url: "https://itlegend.net/assets/images/og-img.png" }],
-  }
+    title: "ITLegend Courses | Learn, Practice & Build",
+    description:
+      "Explore ITLegend courses, follow structured lessons, and build your skills through a focused learning experience.",
+    images: [
+      {
+        url: "https://itlegend.net/assets/images/og-img.png",
+      },
+    ],
+  },
 };
 
 export default function RootLayout({
